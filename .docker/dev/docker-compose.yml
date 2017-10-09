@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  dev:
+    build:
+      context: ../..
+      dockerfile: .docker/dev/Dockerfile
+    ports:
+      - 4444:3000
+    hostname: service-web
+    restart: always

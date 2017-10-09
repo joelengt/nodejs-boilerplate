@@ -1,0 +1,15 @@
+/.idea
+/.env
+/.vscode
+/node_modules
+/npm-debug.log
+/coverage
+.DS_Store
+.DS_Store?
+._*
+/dist
+.Spotlight-V100
+.Trashes
+Icon?
+Thumbs.db
+dump.rdb

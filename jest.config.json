@@ -1,0 +1,24 @@
+{
+  "testEnvironment": "node",
+  "moduleFileExtensions": [
+    "js",
+    "json"
+  ],
+  "moduleDirectories": [
+    "node_modules"
+  ],
+  "moduleNameMapper": {
+    "^src(.*)$": "<rootDir>/src$1",
+    "^lib(.*)$": "<rootDir>/lib$1"
+  },
+  "testPathIgnorePatterns": [
+    "<rootDir>/node_modules/"
+  ],
+  "collectCoverageFrom": [
+    "src/**/*.js",
+    "!**/node_modules/**"
+  ],
+  "transform": {
+    "^.+\\.js$": "babel-jest"
+  }
+}
