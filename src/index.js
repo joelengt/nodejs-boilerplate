@@ -35,7 +35,7 @@ app.use(helmet.frameguard());
 app.use(helmet.hidePoweredBy());
 app.use(helmet.ieNoOpen());
 app.use(helmet.noSniff());
-if(process.env.ENV === 'production') {
+if(process.env.NODE_ENV === 'production') {
   app.use(helmet.hsts({ maxAge: 1000 * 60 * 60 * 24 * 30, force: true }));
   app.use(helmet.contentSecurityPolicy({
     defaultSrc: ["'self'"],
