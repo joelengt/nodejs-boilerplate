@@ -1,4 +1,4 @@
-# QR Assistance Service Register
+# NodeJS Boilerplate
 
 A highly scalable and simple boilerplate for server apps.
 
