@@ -3,9 +3,12 @@ import {ordersController} from '/controllers'
 
 const debug = require('debug')('assistance-service:routes:orders')
 const router = express.Router()
+const { validateParam, validateBody, schemas } = require('~/src/utils')
 
 router.route('/')
-  .get(ordersController.getList)
+  .get(validateParam(schemas.orderIDSchema),
+       validateBody(schemas.orderSchema),
+       ordersController.getList)
   .post(ordersController.create)
 
 router.route('/:id')
