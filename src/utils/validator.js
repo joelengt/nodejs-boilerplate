@@ -1,4 +1,4 @@
-var debug = require('debug')('riqra-service-catalogo:utils-validator')
+var debug = require('debug')('utils:validator')
 const Joi = require('joi')
 
 // Validate uri param
