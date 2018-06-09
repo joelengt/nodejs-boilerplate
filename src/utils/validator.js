@@ -140,7 +140,7 @@ export const schemas = {
     isFeatured: Joi.boolean().strict(),
     isArchived: Joi.boolean().strict()
   }),
-  companySchema: Joi.object().keys({
+  orderSchema: Joi.object().keys({
     name: Joi.string()
   })
 }
